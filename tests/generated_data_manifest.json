@@ -1,0 +1,60 @@
+{
+  "baseline_commit": "6fcf2a64f046f5d2e16d1d1289697f09fe342147",
+  "files": [
+    {
+      "path": "src/features/battle/generated/combat_scene_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Battle/CombatSceneData.h",
+      "sha256": "482f60f3fe85279ccb1b3f6325f0b8144e600ccada140aa5b4c42df01dd403a8"
+    },
+    {
+      "path": "src/features/battle/generated/combat_weapon_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Battle/CombatWeaponCatalogData.h",
+      "sha256": "499baa41cc78a6939e77c668581fbb30dd31fb00c063204482f7b007dba32c6a"
+    },
+    {
+      "path": "src/features/battle/generated/fighter_attribute_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Battle/FighterAttributeCatalogData.h",
+      "sha256": "edd8f4773ed6b6f394c825f0733460d99e1f2690c0a08f28d7cff48a2b4eb214"
+    },
+    {
+      "path": "src/features/battle/generated/fighter_health_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Battle/FighterHealthCatalogData.h",
+      "sha256": "a0f63b6e4fddab666dcabcaa84241fc1c683aa4adab825f744d71f27465efdd6"
+    },
+    {
+      "path": "src/features/battle/generated/weapon_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Battle/WeaponCatalogData.h",
+      "sha256": "0237a4a999c4a4606c8b5f956270eacb9d7446b10664e6ae308baf4e888d5723"
+    },
+    {
+      "path": "src/features/chat/generated/chat_expression_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Chat/ChatExpressionData.h",
+      "sha256": "886ebbc8ea228a9f2b94237b22168d2060be9078bbe2aafd5e9e327690b902e3"
+    },
+    {
+      "path": "src/features/inventory/generated/item_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Inventory/ItemCatalogData.h",
+      "sha256": "c5f5a40f22d6d15e09ce1270a7664cca2077d19d689786b29083e3d20f55649d"
+    },
+    {
+      "path": "src/features/rooms/generated/room_map_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Rooms/RoomMapCatalogData.h",
+      "sha256": "b020b58bd7a6c36db924000cfc3d582519d25575df6e2e968e3696f0d000a083"
+    },
+    {
+      "path": "src/features/shop/generated/shop_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Shop/ShopCatalogData.h",
+      "sha256": "19dc945eb6a92ac05a1b7ed5f88e247c5018087b2d764d1b96aac27ad4d93250"
+    },
+    {
+      "path": "src/features/shop/generated/shop_fallback_stock_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Shop/ShopFallbackStockData.h",
+      "sha256": "359fcded25100a5f205e2bfba9538f00dea640d743da878a15eb0279a9e5f471"
+    },
+    {
+      "path": "src/features/shop/generated/shop_stock_catalog_data.h",
+      "source_path": "Source/BubbleFighter.Server/Features/Shop/ShopStockCatalogData.h",
+      "sha256": "683a9612976fc39e96fc26c6234f7090d904121cfac8e23868199599650ee9a5"
+    }
+  ]
+}

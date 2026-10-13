@@ -1,0 +1,1395 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+    <Filter Include="application">
+      <UniqueIdentifier>{17E5074B-F908-57A5-805C-480CA8C58D90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{5A82A4B4-012A-5235-8FD2-651EE47D28C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{F154D596-BE79-5526-B85B-D2266A2F194D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\authentication">
+      <UniqueIdentifier>{6A45855F-857F-5B5B-8E37-356FC9CB0FD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\battle">
+      <UniqueIdentifier>{C9E86C7E-69D0-5295-803F-50A9BFC5843D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\battle\generated">
+      <UniqueIdentifier>{1CA3DCB7-8325-5A8C-835A-4BFDE83E724D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\characters">
+      <UniqueIdentifier>{9BB4B4EE-42DF-5505-AAFE-3B8EAC9999AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\chat">
+      <UniqueIdentifier>{C2B1F0BF-C402-5A46-AF05-25745C3A5FAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\chat\generated">
+      <UniqueIdentifier>{C32B63CA-7D04-5ED3-B4BF-9D1E4932BEE7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\configuration">
+      <UniqueIdentifier>{0CAC1779-4D3E-54DD-87A3-C04C83780AD0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\inventory">
+      <UniqueIdentifier>{9E858EA1-6437-5DE8-88EC-668D28042CE6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\inventory\generated">
+      <UniqueIdentifier>{F873985C-812C-5102-BB1B-B67E5FAD86FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\lobby">
+      <UniqueIdentifier>{C60C11D5-389A-5874-91FD-466949E9B358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\parties">
+      <UniqueIdentifier>{527692B0-2C95-58CC-A45D-ADCDEC99F635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\practice">
+      <UniqueIdentifier>{3AEEA913-83C0-5A69-B16E-ED49F04B9222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\rooms">
+      <UniqueIdentifier>{23413385-D7D4-5210-B161-F871539B88A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\rooms\generated">
+      <UniqueIdentifier>{36172331-BDAF-568D-88B6-88B0B5EF5F52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\scenes">
+      <UniqueIdentifier>{2CCA9A35-37F2-541B-BE97-53FAFD4D5E4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\shop">
+      <UniqueIdentifier>{10740C00-2602-5592-8BC8-1B8719C555A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\shop\generated">
+      <UniqueIdentifier>{9A4F1B78-6D64-559F-A43C-80976F57908C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{558C1B97-6F1F-5AA6-B822-13743F8615D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="persistence">
+      <UniqueIdentifier>{83E6C40D-91BB-5F73-BF59-3AD4E0C49C8A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="persistence\inventory">
+      <UniqueIdentifier>{711F7150-82E0-5E24-8B57-02925DF8357D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="persistence\migrations">
+      <UniqueIdentifier>{44620B23-1527-50DE-A170-82823484EDD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{55EF5073-8B0F-507C-9680-1DB77CA0DBE3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\battle">
+      <UniqueIdentifier>{3E7E04F1-939D-5A00-A4E7-700DC2FC0952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\characters">
+      <UniqueIdentifier>{45D49BE3-DF31-516D-AABD-A50D9E4C6F73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\codec">
+      <UniqueIdentifier>{E89E5E02-56CB-573D-9E08-654CBE508177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\configuration">
+      <UniqueIdentifier>{CBAB78B5-B659-5D1F-960B-EBDCFC2909EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\inventory">
+      <UniqueIdentifier>{5ACCC090-EF0C-589E-803A-52FFD71767A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\login">
+      <UniqueIdentifier>{486B8556-16D5-5892-BE19-B3033B9544D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\rooms">
+      <UniqueIdentifier>{9FC1F0D0-483B-5552-84EE-0790940B89FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\scenes">
+      <UniqueIdentifier>{02D98D1A-A765-5C86-A148-1E4DDD657844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\shop">
+      <UniqueIdentifier>{A44C8193-DE2A-5D63-8D45-90077777CFE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\unresolved">
+      <UniqueIdentifier>{F3BC19F0-F7BB-5D75-A00F-AE523270B9E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sessions">
+      <UniqueIdentifier>{35994EF6-B58E-5576-A08E-A145CF7CEC60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\application\local_account_command.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\server_application.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crypto\sha256.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\account_authentication.cpp">
+      <Filter>features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\credential_crypto.cpp">
+      <Filter>features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\initial_handshake.cpp">
+      <Filter>features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\authentication\login_profile.cpp">
+      <Filter>features\authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_damage.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_geometry.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_movement_timeline.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_scene.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\combat_weapon_catalog.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\fighter_attribute_catalog.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\fighter_maximum_health.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\battle\weapon_catalog.cpp">
+      <Filter>features\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\character_creation.cpp">
+      <Filter>features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\character_profile.cpp">
+      <Filter>features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\characters\character_statistics.cpp">
+      <Filter>features\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\chat\scene_chat.cpp">
+      <Filter>features\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\configuration\content_config_response.cpp">
+      <Filter>features\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\cash_inventory.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\default_inventory.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\equipment_change.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\equipment_view.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\inventory_grant.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\inventory_presentation.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\inventory_refresh.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\inventory_slot.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\inventory_validation.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\item_catalog.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\item_use.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\inventory\weapon_preset_state.cpp">
+      <Filter>features\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\lobby\lobby_session.cpp">
+      <Filter>features\lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\lobby\plaza_registry.cpp">
+      <Filter>features\lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\parties\solo_party.cpp">
+      <Filter>features\parties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\practice_entry.cpp">
+      <Filter>features\practice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\practice\practice_session.cpp">
+      <Filter>features\practice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\match_profile_updates.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\match_reward_configuration.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\match_reward_policy.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\result_award_rules.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_actions.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_actor_actions.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_bubble_actions.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_creation.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_game_lifecycle.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_game_session.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_map_catalog.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_match_settlement.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_packet_queue.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_projectiles.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_registry.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_roster.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\rooms\room_settlement_queue.cpp">
+      <Filter>features\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\scenes\scene_roster.cpp">
+      <Filter>features\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\cash_shop.cpp">
+      <Filter>features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\shop_catalog.cpp">
+      <Filter>features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\shop_catalog_response.cpp">
+      <Filter>features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\shop_purchase.cpp">
+      <Filter>features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\features\shop\shop_stock_catalog.cpp">
+      <Filter>features\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\network\connection_heartbeat.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\network\tcp_server.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\inventory\inventory_rows.cpp">
+      <Filter>persistence\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\inventory\my_sql_inventory_changes.cpp">
+      <Filter>persistence\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\inventory\my_sql_inventory_commerce.cpp">
+      <Filter>persistence\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\my_sql_account_store.cpp">
+      <Filter>persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\my_sql_character_store.cpp">
+      <Filter>persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\my_sql_connection.cpp">
+      <Filter>persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\my_sql_inventory_store.cpp">
+      <Filter>persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\persistence\my_sql_match_store.cpp">
+      <Filter>persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\compressed_shot_record.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_actor_damage_result_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_actor_death_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_actor_respawn_wait_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_action_complete_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_action_end_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_action_start_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_contact_pop_request.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_deflect_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_exit_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_pop_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_rescue_effect_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_rescue_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_rescue_request.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_settled_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_bubble_shot_pop_request.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_countdown_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_damager_remove_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_extended_shot_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_grenade_detonate_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_hit_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_load_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_loading_complete_request.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_melee_attack_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_movement_delta_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_movement_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_over_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_report_request.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_respawn_completion_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_respawn_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_respawn_request.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_result_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_result_presentation_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_return_to_room_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_score_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_score_player_update_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_score_record.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_score_update_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_score_value_update.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_shot_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_start_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_stomp_hit_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_stomp_start_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_transport_options_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_weapon_impact_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\game_weapon_switch_notification.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\battle\respawn_parameters.cpp">
+      <Filter>protocol\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\check_create_user_name_request.cpp">
+      <Filter>protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\check_create_user_name_response.cpp">
+      <Filter>protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\create_user_info_notification.cpp">
+      <Filter>protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\create_user_info_request.cpp">
+      <Filter>protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\create_user_info_response.cpp">
+      <Filter>protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\fighter_info.cpp">
+      <Filter>protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\characters\user_stat_notification.cpp">
+      <Filter>protocol\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\additive_stream_cipher.cpp">
+      <Filter>protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\packet_reader.cpp">
+      <Filter>protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\packet_stream_decoder.cpp">
+      <Filter>protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\packet_writer.cpp">
+      <Filter>protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\tcp_packet_codec.cpp">
+      <Filter>protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec\zlib_stored_stream.cpp">
+      <Filter>protocol\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\configuration\content_configuration.cpp">
+      <Filter>protocol\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\configuration\dynamic_config_request.cpp">
+      <Filter>protocol\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\configuration\dynamic_config_response.cpp">
+      <Filter>protocol\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\cash_inventory_pickup_request.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\cash_inventory_pickup_response.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\cash_inventory_update_notification.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\equip_item_request.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\inventory_item_record.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\inventory_refresh_request.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\inventory_update_all_notification.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\inventory_view_update_notification.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\item_use_arguments.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\item_use_request.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\item_use_response.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\unequip_item_request.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\weapon_preset_change_request.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\weapon_preset_change_response.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\inventory\weapon_preset_update_notification.cpp">
+      <Filter>protocol\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\center_list_notification.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\client_ping_response.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\client_to_server_message_0x0001.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\connection_greeting.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\game_patch_response.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\login_request.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\login_response.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\login\server_ping_request.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\create_room_request.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\create_room_response.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\join_room_request.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\join_room_response.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\leave_room_request.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_host_changed_notification.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_list_request.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_list_response.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_member_left_notification.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_ready_request.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\room_slot_update_notification.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\rooms\start_game_request.cpp">
+      <Filter>protocol\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\chat_notification.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\chat_request.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\goto_lobby_notification.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\goto_room_notification.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\move_into_response.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\plaza_movement.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\scene_descriptor_notification.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\session_descriptor.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\scenes\update_party_notification.cpp">
+      <Filter>protocol\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\cash_balance_request.cpp">
+      <Filter>protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\cash_balance_response.cpp">
+      <Filter>protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\shop_entry_request.cpp">
+      <Filter>protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\shop_entry_response.cpp">
+      <Filter>protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\shop_purchase_request.cpp">
+      <Filter>protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\shop\shop_purchase_response.cpp">
+      <Filter>protocol\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0021.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0069.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x006a.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x006b.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0209.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0243.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x025f.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0260.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0270.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x07ed.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800b.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800c.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800d.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800e.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x802d.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\unresolved\server_to_client_message_0x025e.cpp">
+      <Filter>protocol\unresolved</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\menu_initialization.cpp">
+      <Filter>sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\menu_snapshot.cpp">
+      <Filter>sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\player_commerce.cpp">
+      <Filter>sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\player_practice.cpp">
+      <Filter>sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\player_practice_state.cpp">
+      <Filter>sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\player_rooms.cpp">
+      <Filter>sessions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sessions\player_session.cpp">
+      <Filter>sessions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\application\local_account_command.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\server_application.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\crypto\sha256.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\account_authentication.h">
+      <Filter>features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\account_store.h">
+      <Filter>features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\credential_crypto.h">
+      <Filter>features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\initial_handshake.h">
+      <Filter>features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\authentication\login_profile.h">
+      <Filter>features\authentication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\combat_damage.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\combat_geometry.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\combat_movement_timeline.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\combat_scene.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\combat_weapon_catalog.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\fighter_attribute_catalog.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\fighter_maximum_health.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\combat_scene_data.h">
+      <Filter>features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\combat_weapon_catalog_data.h">
+      <Filter>features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\fighter_attribute_catalog_data.h">
+      <Filter>features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\fighter_health_catalog_data.h">
+      <Filter>features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\generated\weapon_catalog_data.h">
+      <Filter>features\battle\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\battle\weapon_catalog.h">
+      <Filter>features\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\character_creation.h">
+      <Filter>features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\character_profile.h">
+      <Filter>features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\character_statistics.h">
+      <Filter>features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\characters\character_store.h">
+      <Filter>features\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\generated\chat_expression_data.h">
+      <Filter>features\chat\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\chat\scene_chat.h">
+      <Filter>features\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\configuration\content_config_response.h">
+      <Filter>features\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\cash_inventory.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\default_inventory.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\equipment_change.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\equipment_view.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\generated\item_catalog_data.h">
+      <Filter>features\inventory\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\inventory_grant.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\inventory_presentation.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\inventory_refresh.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\inventory_slot.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\inventory_store.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\inventory_validation.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\item_catalog.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\item_use.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\inventory\weapon_preset_state.h">
+      <Filter>features\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\lobby\lobby_session.h">
+      <Filter>features\lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\lobby\plaza_registry.h">
+      <Filter>features\lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\parties\solo_party.h">
+      <Filter>features\parties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\practice_entry.h">
+      <Filter>features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\practice\practice_session.h">
+      <Filter>features\practice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\generated\room_map_catalog_data.h">
+      <Filter>features\rooms\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\match_profile_updates.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\match_reward_policy.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\result_award_rules.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_actions.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_creation.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_game_session.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_map_catalog.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_match_settlement.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_packet_queue.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_registry.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_roster.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\rooms\room_settlement_queue.h">
+      <Filter>features\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\scenes\scene_roster.h">
+      <Filter>features\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\cash_shop.h">
+      <Filter>features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\generated\shop_catalog_data.h">
+      <Filter>features\shop\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\generated\shop_fallback_stock_data.h">
+      <Filter>features\shop\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\generated\shop_stock_catalog_data.h">
+      <Filter>features\shop\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\shop_catalog.h">
+      <Filter>features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\shop_catalog_response.h">
+      <Filter>features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\shop_purchase.h">
+      <Filter>features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\features\shop\shop_stock_catalog.h">
+      <Filter>features\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\connection_heartbeat.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\network\tcp_server.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\inventory\inventory_rows.h">
+      <Filter>persistence\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\my_sql_account_store.h">
+      <Filter>persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\my_sql_character_store.h">
+      <Filter>persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\my_sql_commands.h">
+      <Filter>persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\my_sql_connection.h">
+      <Filter>persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\my_sql_inventory_store.h">
+      <Filter>persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\persistence\my_sql_match_store.h">
+      <Filter>persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\compressed_shot_record.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_actor_damage_result_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_actor_death_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_actor_respawn_wait_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_action_complete_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_action_end_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_action_start_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_contact_pop_request.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_deflect_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_exit_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_pop_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_rescue_effect_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_rescue_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_rescue_request.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_settled_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_bubble_shot_pop_request.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_countdown_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_damager_remove_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_extended_shot_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_grenade_detonate_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_hit_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_load_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_loading_complete_request.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_melee_attack_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_movement_delta_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_movement_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_over_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_report_request.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_respawn_completion_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_respawn_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_respawn_request.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_result_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_result_presentation_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_return_to_room_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_score_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_score_player_update_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_score_record.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_score_update_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_score_value_update.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_shot_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_start_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_stomp_hit_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_stomp_start_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_transport_options_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_weapon_impact_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\game_weapon_switch_notification.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\battle\respawn_parameters.h">
+      <Filter>protocol\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\check_create_user_name_request.h">
+      <Filter>protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\check_create_user_name_response.h">
+      <Filter>protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\create_user_info_notification.h">
+      <Filter>protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\create_user_info_request.h">
+      <Filter>protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\create_user_info_response.h">
+      <Filter>protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\fighter_info.h">
+      <Filter>protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\characters\user_stat_notification.h">
+      <Filter>protocol\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\additive_stream_cipher.h">
+      <Filter>protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\packet_reader.h">
+      <Filter>protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\packet_stream_decoder.h">
+      <Filter>protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\packet_writer.h">
+      <Filter>protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\tcp_packet_codec.h">
+      <Filter>protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec\zlib_stored_stream.h">
+      <Filter>protocol\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\configuration\content_configuration.h">
+      <Filter>protocol\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\configuration\dynamic_config_request.h">
+      <Filter>protocol\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\configuration\dynamic_config_response.h">
+      <Filter>protocol\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_pickup_request.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_pickup_response.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_slot_record.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_update_notification.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\equip_item_request.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\inventory_item_record.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\inventory_refresh_request.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\inventory_update_all_notification.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\inventory_view_update_notification.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\item_use_arguments.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\item_use_request.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\item_use_response.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\unequip_item_request.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\weapon_preset_change_request.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\weapon_preset_change_response.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\inventory\weapon_preset_update_notification.h">
+      <Filter>protocol\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\center_list_notification.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\client_ping_response.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\client_to_server_message_0x0001.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\connection_greeting.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\game_patch_response.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\login_request.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\login_response.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\login\server_ping_request.h">
+      <Filter>protocol\login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\create_room_request.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\create_room_response.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\join_room_request.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\join_room_response.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\leave_room_request.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_host_changed_notification.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_list_request.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_list_response.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_member_left_notification.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_ready_request.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\room_slot_update_notification.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\rooms\start_game_request.h">
+      <Filter>protocol\rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\chat_notification.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\chat_request.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\goto_lobby_notification.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\goto_room_notification.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\move_into_response.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\plaza_movement.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\scene_descriptor_notification.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\session_descriptor.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\scenes\update_party_notification.h">
+      <Filter>protocol\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\cash_balance_request.h">
+      <Filter>protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\cash_balance_response.h">
+      <Filter>protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\shop_entry_request.h">
+      <Filter>protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\shop_entry_response.h">
+      <Filter>protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\shop_purchase_request.h">
+      <Filter>protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\shop\shop_purchase_response.h">
+      <Filter>protocol\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0021.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0069.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x006a.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x006b.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0209.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0243.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x025f.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0260.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0270.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x07ed.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800b.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800c.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800d.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800e.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x802d.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\unresolved\server_to_client_message_0x025e.h">
+      <Filter>protocol\unresolved</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\menu_initialization.h">
+      <Filter>sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\menu_snapshot.h">
+      <Filter>sessions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sessions\player_session.h">
+      <Filter>sessions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\persistence\migrations\add_character_statistics.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\create_cash_inventory_slots.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\create_characters.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\create_inventory_slots.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\create_local_accounts.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\create_match_settlements.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\create_weapon_presets.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+    <None Include="..\src\persistence\migrations\expand_cash_inventory_usage.sql">
+      <Filter>persistence\migrations</Filter>
+    </None>
+  </ItemGroup>
+</Project>

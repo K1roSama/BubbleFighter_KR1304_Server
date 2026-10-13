@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MySqlRoot Condition="'$(MySqlRoot)'==''">$(MSBuildThisFileDirectory)..\Artifacts\Dependencies\mysql-8.4.11-winx64</MySqlRoot>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MySqlRoot)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MySqlRoot)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Target Name="CheckMySqlDependency" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(MySqlRoot)\include\mysql.h') Or !Exists('$(MySqlRoot)\lib\libmysql.lib') Or !Exists('$(MySqlRoot)\lib\libmysql.dll')"
+           Text="MySQL C API dependency is missing. Set MySqlRoot to a MySQL 8.4 x64 ZIP installation." />
+  </Target>
+  <Target Name="CopyMySqlRuntime" AfterTargets="Build">
+    <Copy SourceFiles="$(MySqlRoot)\lib\libmysql.dll;$(MySqlRoot)\bin\libssl-3-x64.dll;$(MySqlRoot)\bin\libcrypto-3-x64.dll" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

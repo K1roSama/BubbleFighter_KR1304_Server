@@ -1,0 +1,156 @@
+name: Build and Release
+
+run-name: Release ${{ inputs.tag }} (Windows x64)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release 标签，例如 v1.0.0'
+        required: true
+        type: string
+      release_name:
+        description: 'Release 标题（留空使用 BubbleFighter.Server + 标签）'
+        required: false
+        type: string
+      prerelease:
+        description: '标记为预发布版本'
+        type: boolean
+        default: false
+      draft:
+        description: '创建草稿 Release'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Build, test and publish Windows x64
+    runs-on: windows-2025
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      RELEASE_TAG: ${{ inputs.tag }}
+
+    steps:
+      - name: Checkout selected revision
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Validate release tag
+        run: |
+          if ($env:RELEASE_TAG -notmatch '^[0-9A-Za-z][0-9A-Za-z._+-]*$') {
+            throw '标签只能包含英文字母、数字、点、下划线、加号和连字符，并以字母或数字开头。'
+          }
+          $tagRef = "refs/tags/$env:RELEASE_TAG"
+          git check-ref-format $tagRef
+          if ($LASTEXITCODE -ne 0) { throw 'Release 标签不是有效的 Git 标签。' }
+          git show-ref --verify --quiet $tagRef
+          $tagStatus = $LASTEXITCODE
+          if ($tagStatus -eq 0) {
+            $tagCommit = git rev-parse "$tagRef^{commit}"
+            if ($LASTEXITCODE -ne 0) { throw '无法读取已有标签对应的提交。' }
+            if ($tagCommit -ne $env:GITHUB_SHA) {
+              throw '已有标签指向其它提交，请选择该标签运行，或填写新的标签。'
+            }
+          } elseif ($tagStatus -ne 1) {
+            throw '检查已有标签失败。'
+          }
+          $global:LASTEXITCODE = 0
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Cache MySQL development files
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: Artifacts/Dependencies/mysql-8.4.11-winx64
+          key: ${{ runner.os }}-${{ runner.arch }}-mysql-${{ hashFiles('build/setup_dependencies.py') }}
+
+      - name: Prepare verified MySQL dependencies
+        run: |
+          python build/setup_dependencies.py
+          if ($LASTEXITCODE -ne 0) { throw 'MySQL 依赖准备失败。' }
+
+      - name: Check repository compatibility baselines
+        run: |
+          python build/verify.py
+          if ($LASTEXITCODE -ne 0) { throw '工程或兼容基线检查失败。' }
+
+      - name: Build and test Debug and Release
+        run: |
+          foreach ($configuration in @('Debug', 'Release')) {
+            ./build/build.ps1 -Configuration $configuration
+            $testExecutable = "./Artifacts/Tests/x64/$configuration/BubbleFighter.Regression.exe"
+            & $testExecutable tests/compatibility_packets.txt
+            if ($LASTEXITCODE -ne 0) { throw "$configuration 回归测试失败。" }
+          }
+          python tests/runtime_smoke_test.py
+          if ($LASTEXITCODE -ne 0) { throw '生产程序启动或握手检查失败。' }
+
+      - name: Package Windows distribution
+        id: package
+        run: |
+          ./build/package_release.ps1 -Version $env:RELEASE_TAG
+          $archive = "Artifacts/Distribution/BubbleFighter.Server-$env:RELEASE_TAG-Windows-x64.zip"
+          "archive=$archive" >> $env:GITHUB_OUTPUT
+          "checksum=$archive.sha256" >> $env:GITHUB_OUTPUT
+
+      - name: Check the extracted release executable
+        env:
+          RELEASE_ARCHIVE: ${{ steps.package.outputs.archive }}
+        run: |
+          Expand-Archive -LiteralPath $env:RELEASE_ARCHIVE -DestinationPath Artifacts/PackageSmoke
+          python tests/runtime_smoke_test.py --executable Artifacts/PackageSmoke/BubbleFighter.Server.exe
+          if ($LASTEXITCODE -ne 0) { throw '发布包启动或握手检查失败。' }
+
+      - name: Upload distribution and diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: BubbleFighter.Server-Windows-x64-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            Artifacts/Distribution/*.zip
+            Artifacts/Distribution/*.sha256
+            Artifacts/Logs/*.log
+            Artifacts/smoke/**/*.log
+          if-no-files-found: warn
+          retention-days: 14
+          compression-level: 0
+
+      - name: Create GitHub Release and upload assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_NAME: ${{ inputs.release_name }}
+          RELEASE_DRAFT: ${{ inputs.draft }}
+          RELEASE_PRERELEASE: ${{ inputs.prerelease }}
+          RELEASE_ARCHIVE: ${{ steps.package.outputs.archive }}
+          RELEASE_CHECKSUM: ${{ steps.package.outputs.checksum }}
+        run: |
+          $title = if ([string]::IsNullOrWhiteSpace($env:RELEASE_NAME)) {
+            "BubbleFighter.Server $env:RELEASE_TAG"
+          } else { $env:RELEASE_NAME }
+          $releaseArguments = @(
+            'release', 'create', $env:RELEASE_TAG,
+            $env:RELEASE_ARCHIVE, $env:RELEASE_CHECKSUM,
+            '--repo', $env:GITHUB_REPOSITORY,
+            '--target', $env:GITHUB_SHA,
+            '--title', $title,
+            '--generate-notes'
+          )
+          if ($env:RELEASE_DRAFT -eq 'true') { $releaseArguments += '--draft' }
+          if ($env:RELEASE_PRERELEASE -eq 'true') { $releaseArguments += '--prerelease' }
+          gh @releaseArguments
+          if ($LASTEXITCODE -ne 0) { throw '创建 GitHub Release 或上传附件失败。' }

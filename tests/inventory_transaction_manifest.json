@@ -1,0 +1,41 @@
+{
+  "baseline_commit": "6fcf2a64f046f5d2e16d1d1289697f09fe342147",
+  "methods": [
+    {
+      "method": "UseItem",
+      "sha256": "897d048e46e8cf576d275e346c830a422546692463b9ca5978d76622ab0d51ad"
+    },
+    {
+      "method": "Load",
+      "sha256": "d32899065c7de18adbe37103c5c5ffe8b4147e81d7b9cfa7cba68f5280e77c32"
+    },
+    {
+      "method": "ChangeEquipment",
+      "sha256": "f92469a74fd9945da9fafefa96db79ff77d654db20aa96b4f1b6bc5cf25ae834"
+    },
+    {
+      "method": "ChangeWeaponPreset",
+      "sha256": "fa32e815485874a73e929ce3f2ee2e6fae11cb0d4658a5db0ceec29f77e67297"
+    },
+    {
+      "method": "Purchase",
+      "sha256": "5fde88138851f79f42f2cfec88ec541adabb613542c4918a7fd3d0a8ed018d85"
+    },
+    {
+      "method": "LoadSnapshot",
+      "sha256": "0b8aff9154d09aebed2034f95354f3bbf25316222d8e711ea6a670e1e24d0ca1"
+    },
+    {
+      "method": "LoadMenuSnapshot",
+      "sha256": "daa262bac8576c84bb7384312200d4581ab204ac47ee267e0c994ec59f566552"
+    },
+    {
+      "method": "Pickup",
+      "sha256": "635e6a23420af864521c26318278c959a393fc4e39fc0053a07ed10a873eb2ad"
+    },
+    {
+      "method": "Save",
+      "sha256": "fb16f167a87c66db444f593d8564ce413f9bdeacdad5c0b25e31c61a380ff6ca"
+    }
+  ]
+}

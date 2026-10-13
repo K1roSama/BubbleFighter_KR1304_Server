@@ -1,0 +1,107 @@
+name: Build and Test
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Windows x64 (${{ matrix.configuration }})
+    runs-on: windows-2025
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        configuration: [Debug, Release]
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      BUILD_CONFIGURATION: ${{ matrix.configuration }}
+      VSLANG: '1033'
+      PYTHONUTF8: '1'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Cache MySQL development files
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: Artifacts/Dependencies/mysql-8.4.11-winx64
+          key: ${{ runner.os }}-${{ runner.arch }}-mysql-${{ hashFiles('build/setup_dependencies.py') }}
+
+      - name: Prepare verified MySQL dependencies
+        id: dependencies
+        run: |
+          New-Item -ItemType Directory -Force -Path Artifacts/Logs | Out-Null
+          python build/setup_dependencies.py 2>&1 | Tee-Object -FilePath Artifacts/Logs/dependencies.log
+          if ($LASTEXITCODE -ne 0) { throw 'MySQL 依赖准备失败。' }
+
+      - name: Build solution
+        id: compile
+        run: |
+          ./build/build.ps1 -Configuration $env:BUILD_CONFIGURATION 2>&1 |
+            Tee-Object -FilePath "Artifacts/Logs/build-$env:BUILD_CONFIGURATION.console.log"
+
+      - name: Run regression tests
+        id: regression
+        run: |
+          & "./Artifacts/Tests/x64/$env:BUILD_CONFIGURATION/BubbleFighter.Regression.exe" tests/compatibility_packets.txt 2>&1 |
+            Tee-Object -FilePath Artifacts/Logs/regression.log
+          if ($LASTEXITCODE -ne 0) { throw '回归测试失败。' }
+
+      - name: Check production startup and handshake
+        id: smoke
+        run: |
+          python tests/runtime_smoke_test.py --configuration $env:BUILD_CONFIGURATION 2>&1 |
+            Tee-Object -FilePath Artifacts/Logs/runtime.log
+          if ($LASTEXITCODE -ne 0) { throw '生产程序启动或握手检查失败。' }
+
+      - name: Check repository compatibility baselines
+        id: verify
+        run: |
+          python build/verify.py 2>&1 | Tee-Object -FilePath Artifacts/Logs/compatibility.log
+          if ($LASTEXITCODE -ne 0) { throw '工程或兼容基线检查失败。' }
+          python -m unittest discover -s tests -p build_report_test.py 2>&1 |
+            Tee-Object -FilePath Artifacts/Logs/build_report_tests.log
+          if ($LASTEXITCODE -ne 0) { throw '编译诊断报告测试失败。' }
+
+      - name: Summarize build results and annotate errors
+        if: always()
+        env:
+          DEPENDENCIES_OUTCOME: ${{ steps.dependencies.outcome }}
+          COMPILE_OUTCOME: ${{ steps.compile.outcome }}
+          REGRESSION_OUTCOME: ${{ steps.regression.outcome }}
+          SMOKE_OUTCOME: ${{ steps.smoke.outcome }}
+          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
+        run: |
+          python build/report_build.py --configuration $env:BUILD_CONFIGURATION
+          if ($LASTEXITCODE -ne 0) { throw '生成编译诊断报告失败。' }
+
+      - name: Upload diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-logs-${{ matrix.configuration }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            Artifacts/Logs/**
+            Artifacts/smoke/**
+          if-no-files-found: warn
+          retention-days: 14

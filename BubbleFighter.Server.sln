@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BubbleFighter.Server", "build\BubbleFighter.Server.vcxproj", "{A10B5F38-83C3-40D9-ABE5-E61B99D7C354}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BubbleFighter.Regression", "tests\BubbleFighter.Regression.vcxproj", "{7BFB206C-65A4-4AC0-9534-AFA491E8B87A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BFB206C-65A4-4AC0-9534-AFA491E8B87A}.Release|x64.ActiveCfg = Release|x64
+		{7BFB206C-65A4-4AC0-9534-AFA491E8B87A}.Release|x64.Build.0 = Release|x64
+		{7BFB206C-65A4-4AC0-9534-AFA491E8B87A}.Debug|x64.ActiveCfg = Debug|x64
+		{7BFB206C-65A4-4AC0-9534-AFA491E8B87A}.Debug|x64.Build.0 = Debug|x64
+		{A10B5F38-83C3-40D9-ABE5-E61B99D7C354}.Debug|x64.ActiveCfg = Debug|x64
+		{A10B5F38-83C3-40D9-ABE5-E61B99D7C354}.Debug|x64.Build.0 = Debug|x64
+		{A10B5F38-83C3-40D9-ABE5-E61B99D7C354}.Release|x64.ActiveCfg = Release|x64
+		{A10B5F38-83C3-40D9-ABE5-E61B99D7C354}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5A54376-74DE-4D41-82E7-D0A7C5C3A857}
+	EndGlobalSection
+EndGlobal

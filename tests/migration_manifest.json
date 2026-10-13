@@ -1,0 +1,37 @@
+{
+  "baseline_commit": "6fcf2a64f046f5d2e16d1d1289697f09fe342147",
+  "files": [
+    {
+      "path": "src/persistence/migrations/add_character_statistics.sql",
+      "sha256": "74791ee5c7b535e4139a3e6e72c19215ac8bfd67ad8552f608d7ca8853716d65"
+    },
+    {
+      "path": "src/persistence/migrations/create_cash_inventory_slots.sql",
+      "sha256": "6721308351cece414d3e57882d5978300097db465107391a16cbefea30e6aa8c"
+    },
+    {
+      "path": "src/persistence/migrations/create_characters.sql",
+      "sha256": "c082cd04344c23980fbfa5aa2df08ea83b134c77678a5b1e9d5b9ebfdd608b60"
+    },
+    {
+      "path": "src/persistence/migrations/create_inventory_slots.sql",
+      "sha256": "43f7696374ed1c07b2f883bd54bba3e86a5fa9599641a234a692a6ee457e847c"
+    },
+    {
+      "path": "src/persistence/migrations/create_local_accounts.sql",
+      "sha256": "02a4b9008807b812637e3eaf77e964ad9af1b9da41093a5a9bf40616ee4755ab"
+    },
+    {
+      "path": "src/persistence/migrations/create_match_settlements.sql",
+      "sha256": "022bb10d950f26243abc68eea93b532f573e2a1fee50ef42b18f822998824224"
+    },
+    {
+      "path": "src/persistence/migrations/create_weapon_presets.sql",
+      "sha256": "7156582bdc6427557f9eb8de266cc5deb1b7f33e602bbdb99bdce7217ee768fc"
+    },
+    {
+      "path": "src/persistence/migrations/expand_cash_inventory_usage.sql",
+      "sha256": "179611bcfee0dcd0b534fee621970ec3652ab1f0fb81f596d1d94969e5ede465"
+    }
+  ]
+}

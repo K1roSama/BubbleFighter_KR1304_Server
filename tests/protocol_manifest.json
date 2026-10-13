@@ -1,0 +1,656 @@
+{
+  "baseline_commit": "6fcf2a64f046f5d2e16d1d1289697f09fe342147",
+  "files": [
+    {
+      "path": "src/protocol/codec/additive_stream_cipher.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/AdditiveStreamCipher.cpp",
+      "sha256": "ea940214d731c0bd23df30e8db2a483bcca88750483476ab4e0bf73cfde460f0"
+    },
+    {
+      "path": "src/protocol/shop/cash_balance_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CashBalanceRequest.cpp",
+      "sha256": "cc967f468690cd9a38571729b1f45a5472396611ad48950bdaa94f5a36fd1254"
+    },
+    {
+      "path": "src/protocol/shop/cash_balance_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CashBalanceResponse.cpp",
+      "sha256": "058293551749ceeab38c9f6e1fd27f1d3642bb134c2982bf4a0965f162322330"
+    },
+    {
+      "path": "src/protocol/inventory/cash_inventory_pickup_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CashInventoryPickupRequest.cpp",
+      "sha256": "f6c69c91403f2bb9b3dad1df4aa8a1ab3f9454300e3a21eea2cb032274a46bda"
+    },
+    {
+      "path": "src/protocol/inventory/cash_inventory_pickup_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CashInventoryPickupResponse.cpp",
+      "sha256": "8183b0d61162e4874c3ce1a67975b068ff63dc2e1298f6857dc1a83e83122cd3"
+    },
+    {
+      "path": "src/protocol/inventory/cash_inventory_update_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CashInventoryUpdateNotification.cpp",
+      "sha256": "3c31c50d11e77e98c85f9b8d196f793823b28904cd42705ea3e1bd8b8dad9dcd"
+    },
+    {
+      "path": "src/protocol/login/center_list_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CenterListNotification.cpp",
+      "sha256": "be9563cd265f8b055b330f5e29f2d4953edf7f20ee68c009ca3d9ec57eb957ad"
+    },
+    {
+      "path": "src/protocol/scenes/chat_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ChatNotification.cpp",
+      "sha256": "dc7797aaf60e1a9bab6330c13b66da3ba3674a8d12d25f8d6c4ab45fef1d3a6e"
+    },
+    {
+      "path": "src/protocol/scenes/chat_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ChatRequest.cpp",
+      "sha256": "2fb0ddaa86b35a8b3ade5f14850fd4cb68090291805183f7dfbebaff1e9d2d86"
+    },
+    {
+      "path": "src/protocol/characters/check_create_user_name_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CheckCreateUserNameRequest.cpp",
+      "sha256": "a408e65038d778cad06bb910856c45d06ce4b6bc611dc227c1783a8b433075bd"
+    },
+    {
+      "path": "src/protocol/characters/check_create_user_name_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CheckCreateUserNameResponse.cpp",
+      "sha256": "6d498f563d48b259300e629f9c1e8800f7428fb9758c90acff20ac26fd758944"
+    },
+    {
+      "path": "src/protocol/login/client_ping_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientPingResponse.cpp",
+      "sha256": "026bdda2d57273337474cf6b3ee88a368610b0f7d465c7f08f26383108b27d81"
+    },
+    {
+      "path": "src/protocol/login/client_to_server_message_0x0001.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x0001.cpp",
+      "sha256": "88707a869d192117815546a7cc3956148ddbfa4609adac6381943f08c82d90e2"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x0021.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x0021.cpp",
+      "sha256": "507ccec05bf3d07e2d58fecbcab994e65bdfea624d16302058a34d7ad0624ea4"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x0069.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x0069.cpp",
+      "sha256": "65828cddc576a3fa53a741d7f68135cbdc3e57946d6cb149e573a610ccbfe3f8"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x006a.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x006A.cpp",
+      "sha256": "914faf41909269b510f2845c2c076c09ae68a68472d6f44fa256db4f1918b471"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x006b.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x006B.cpp",
+      "sha256": "c9afad3e6868cf08684a8844cf6b95cc9fbdfc192b8f6825dbe8fb397b3c1b98"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x0209.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x0209.cpp",
+      "sha256": "6286cdd7739761d47dc8517685d1b6c3f2198a94bfdd47be2bed954915826182"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x0243.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x0243.cpp",
+      "sha256": "d95adfbc4d555f8960c7b345c1deaf213e6f60d68c0e7fed802079c9efdbf7a4"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x025f.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x025F.cpp",
+      "sha256": "20dfb51670876161e201e94c848917318388119fbcffe7fc0687905e86e3f67b"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x0260.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x0260.cpp",
+      "sha256": "1df791191d14d8a098ce1d22c0ef1098c50b2d2bc451ad7ea60da3abf76d7f34"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x0270.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x0270.cpp",
+      "sha256": "2929bbd1948f61a0afcff62fbf81233fe82746c78d68d73576117294a304afec"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x07ed.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x07ED.cpp",
+      "sha256": "57dd74f4087b62f129001552c525e570d4e3732f1e29173673db065f13466d15"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x800b.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x800B.cpp",
+      "sha256": "14004a23097a411d80c55fbeabb4754c84cea0448d83cd481ee239c91075fe3e"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x800c.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x800C.cpp",
+      "sha256": "4c367bbbce3bd7af4b57650e0c1676ab52f1031d995dc1ff2dad14f1f43b04dc"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x800d.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x800D.cpp",
+      "sha256": "9b88d4ee5f62f0a7ad1fd046c3b9acdad6be6030180bd629cc3b9a2a1ecf6799"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x800e.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x800E.cpp",
+      "sha256": "416e2c65cb13dfe628744a9cceb3a3964e3d1bd229aec8e0a6ca64306c795090"
+    },
+    {
+      "path": "src/protocol/unresolved/client_to_server_message_0x802d.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ClientToServerMessage0x802D.cpp",
+      "sha256": "f0353a0b454d2a636b8ce4e45739902700684694ed53dfd0176956456a2b398e"
+    },
+    {
+      "path": "src/protocol/battle/compressed_shot_record.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CompressedShotRecord.cpp",
+      "sha256": "ac53113f8e766e6fe7448e65a0b7627838b10aad4b65d4bf515c28af7b4f9302"
+    },
+    {
+      "path": "src/protocol/login/connection_greeting.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ConnectionGreeting.cpp",
+      "sha256": "db6c08cbc8ce1b336948c816063614ffa0cabd5ed974467d8c37ff5c98c69deb"
+    },
+    {
+      "path": "src/protocol/configuration/content_configuration.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ContentConfiguration.cpp",
+      "sha256": "e2fa63f7e2d59ebb7a6a1dfa7ea1e048f832949c6efe30e799e9444db035b39d"
+    },
+    {
+      "path": "src/protocol/rooms/create_room_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CreateRoomRequest.cpp",
+      "sha256": "a94ed6cdb45aba3d8c3a983de5dcf0ace546e6c34ad83db662fb3307d5ed667e"
+    },
+    {
+      "path": "src/protocol/rooms/create_room_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CreateRoomResponse.cpp",
+      "sha256": "eca3bfdc4439031a8d6abf3bb71f37ee727f9319305715ef0cc85fd3dd5bf841"
+    },
+    {
+      "path": "src/protocol/characters/create_user_info_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CreateUserInfoNotification.cpp",
+      "sha256": "53475d18a2008df86f8f0ac038cf5ee6dc4e87c408b040a0508aa86c8fb5fad0"
+    },
+    {
+      "path": "src/protocol/characters/create_user_info_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CreateUserInfoRequest.cpp",
+      "sha256": "5a004386eaf484ec536de727cc5af2d83b30c14a9ea1d94edfe10b3a74350bbf"
+    },
+    {
+      "path": "src/protocol/characters/create_user_info_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/CreateUserInfoResponse.cpp",
+      "sha256": "bb669ba171ab7a391aeeb2cf6f46d9d843339a4624c5cf2dee71b2573bc16cd6"
+    },
+    {
+      "path": "src/protocol/configuration/dynamic_config_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/DynamicConfigRequest.cpp",
+      "sha256": "44f9470efeaefc5f73443df0038a2e3b3d5b173329fb362e20dd1d65a1983c0a"
+    },
+    {
+      "path": "src/protocol/configuration/dynamic_config_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/DynamicConfigResponse.cpp",
+      "sha256": "924f757ba56d0ba61c69d7d990ba385a117577c1be1720a13ccf008dcdf479ab"
+    },
+    {
+      "path": "src/protocol/inventory/equip_item_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/EquipItemRequest.cpp",
+      "sha256": "1b74afa8ea435dc1ff177fc28c9a09448384683b885b884dadc949628615ce6d"
+    },
+    {
+      "path": "src/protocol/characters/fighter_info.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/FighterInfo.cpp",
+      "sha256": "bdc3d8709f640bf3b4d2662cb61b317d6445b7e4457f5218d0c3dc2a9e1a5040"
+    },
+    {
+      "path": "src/protocol/battle/game_actor_damage_result_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameActorDamageResultNotification.cpp",
+      "sha256": "38077529745229a430a2657bf9d67e83befffb51bbd0547c5f9fd39d75f1e8dc"
+    },
+    {
+      "path": "src/protocol/battle/game_actor_death_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameActorDeathNotification.cpp",
+      "sha256": "7b2ba460619a55b95c665de4cf9e957a596be11b89993b9460a026fa0d762c57"
+    },
+    {
+      "path": "src/protocol/battle/game_actor_respawn_wait_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameActorRespawnWaitNotification.cpp",
+      "sha256": "13e32bcb6557203f7078aefb1ee2b80f7a37103055e33de69397201b94715309"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_action_complete_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleActionCompleteNotification.cpp",
+      "sha256": "eb2a48325c20b5343c21a3e7d817b7a2bf6c1c261598a08ebc1e33e6ff087b2a"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_action_end_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleActionEndNotification.cpp",
+      "sha256": "6bb9f88a860c67cf03b1afc5f01512b0fea04cb81095ff2743e62c3c431d4cdc"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_action_start_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleActionStartNotification.cpp",
+      "sha256": "9c21cf5859e0cb3d03716d74c908c32bb2150295ba8fef90e5b12cf5b27a66f5"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_contact_pop_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleContactPopRequest.cpp",
+      "sha256": "07b6cc52f44afc4bcfa6ba44fea3686e2c9599c31b3b20b1015c612a903adaa3"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_deflect_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleDeflectNotification.cpp",
+      "sha256": "ed4dc1e8b92b3b219f242b68a2179b267d2f9b487edd312b3c103596f0f39438"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_exit_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleExitNotification.cpp",
+      "sha256": "936d42ebbcc4010649c4780abacc6e9fd0de884e2d0f7b8f354e23eeac521b6d"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_pop_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubblePopNotification.cpp",
+      "sha256": "fa816e5e943fb499d676f0d186cb16a8c6028d6fef8d048ea13ccee4405fcfd4"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_rescue_effect_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleRescueEffectNotification.cpp",
+      "sha256": "21c9c7f4fa3767d70a01c8da94597b088edd342eb4248c3a9c5af10f5e7b2d45"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_rescue_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleRescueNotification.cpp",
+      "sha256": "b6a466e780e77ca99e4bb757113d140a4dc23a8ab7e6655b0de75870d3ff35d8"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_rescue_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleRescueRequest.cpp",
+      "sha256": "0b0b20f0635ca740e61387c52188aa81622b6eb9c7a8a5a8c5445b8e6527dd57"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_settled_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleSettledNotification.cpp",
+      "sha256": "d7c8125b4c86cf0a3b7fd8d64492ba9d0d9399ee57ac605e860d3b963f6b07c3"
+    },
+    {
+      "path": "src/protocol/battle/game_bubble_shot_pop_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameBubbleShotPopRequest.cpp",
+      "sha256": "ad263fd2ceeb035029320057bbe5dcd32e371289cf39349448c6f364a7d7900f"
+    },
+    {
+      "path": "src/protocol/battle/game_countdown_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameCountdownNotification.cpp",
+      "sha256": "87560fb342d9696d6a735caa727cd378865dc7711c213502efcea914497f61fe"
+    },
+    {
+      "path": "src/protocol/battle/game_damager_remove_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameDamagerRemoveNotification.cpp",
+      "sha256": "ca26108a375f5481df84376ae9aab2232fe27933ddac91d5c3d6e3af81048a15"
+    },
+    {
+      "path": "src/protocol/battle/game_extended_shot_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameExtendedShotNotification.cpp",
+      "sha256": "dde9a46813de672fc7678d3be44e962bf35f575080e477920ee681fc640f9b57"
+    },
+    {
+      "path": "src/protocol/battle/game_grenade_detonate_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameGrenadeDetonateNotification.cpp",
+      "sha256": "472e2e4f8d11596e5c86386c2329af06ccce20c8a770669e6bb61d0e655c1817"
+    },
+    {
+      "path": "src/protocol/battle/game_hit_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameHitNotification.cpp",
+      "sha256": "75080a81dadd937634b31e2f07943b768c35219b93e5e90506c41bbcbc563a4d"
+    },
+    {
+      "path": "src/protocol/battle/game_loading_complete_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameLoadingCompleteRequest.cpp",
+      "sha256": "94de75d8f25ecfb8323bdd3c47ac245a4dca563974aa33f39c30e9897bbae5e1"
+    },
+    {
+      "path": "src/protocol/battle/game_load_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameLoadNotification.cpp",
+      "sha256": "27b4ef3f72cd297dc1d886358e5ed96c41534230d32c74668aa5612603a9cef1"
+    },
+    {
+      "path": "src/protocol/battle/game_melee_attack_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameMeleeAttackNotification.cpp",
+      "sha256": "c572fa8f7f2d726359c1dfcdb78dd82afb96b9ed4beb706ee2a8785d27b28b5b"
+    },
+    {
+      "path": "src/protocol/battle/game_movement_delta_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameMovementDeltaNotification.cpp",
+      "sha256": "365d21c7fe24e6461c34ac61003c9e39d6ad05ed80937d4f01df7e15b416b8f5"
+    },
+    {
+      "path": "src/protocol/battle/game_movement_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameMovementNotification.cpp",
+      "sha256": "4d625a0788ea160b82478187203fcd4ac981c6f42331cc70cbbb75f81691341f"
+    },
+    {
+      "path": "src/protocol/battle/game_over_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameOverNotification.cpp",
+      "sha256": "93b8f91e739514046c29ca5b158c1c775fa90d3b081318d7a9766c9830b8efbe"
+    },
+    {
+      "path": "src/protocol/login/game_patch_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GamePatchResponse.cpp",
+      "sha256": "ac9bc9798e45a160de204827df4a458ce165ca6b364e15793d2c0878384740dc"
+    },
+    {
+      "path": "src/protocol/battle/game_report_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameReportRequest.cpp",
+      "sha256": "5425b32fc3ba3d270f21b417828103b0de3a5718bba47267439dfcebce64e6d3"
+    },
+    {
+      "path": "src/protocol/battle/game_respawn_completion_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameRespawnCompletionNotification.cpp",
+      "sha256": "30edf174a5134abe2388a3757296d3c6ea82c7590d8fccaef9610a06c8665964"
+    },
+    {
+      "path": "src/protocol/battle/game_respawn_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameRespawnNotification.cpp",
+      "sha256": "a454ad28e0d2daa50e29db2fc3b033f95d9bfb51e48b711b0f95fccd3f7d42d0"
+    },
+    {
+      "path": "src/protocol/battle/game_respawn_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameRespawnRequest.cpp",
+      "sha256": "f4d520c7214105978eeb299395f375159730f14d016aadf05e16aad03fcb2473"
+    },
+    {
+      "path": "src/protocol/battle/game_result_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameResultNotification.cpp",
+      "sha256": "7fe56064870c1e10826ed345ef666763c2c79d0f1dba0ac2d959c82c8e9d6401"
+    },
+    {
+      "path": "src/protocol/battle/game_result_presentation_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameResultPresentationNotification.cpp",
+      "sha256": "5724d502c2e87f0439a0f966f9fbdfc32863878b7464ea22be04eef401e63aaf"
+    },
+    {
+      "path": "src/protocol/battle/game_return_to_room_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameReturnToRoomNotification.cpp",
+      "sha256": "c811df8d432944347ab12b92d5588cfa76cbc66198a816fa65a053821a0efc0b"
+    },
+    {
+      "path": "src/protocol/battle/game_score_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameScoreNotification.cpp",
+      "sha256": "fc49faa6bb46400c858603765f64678ba66725e3601d3766e31117d5ba81b31d"
+    },
+    {
+      "path": "src/protocol/battle/game_score_player_update_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameScorePlayerUpdateNotification.cpp",
+      "sha256": "7d1cdb050792759c07c83f5dda387316087a034cde78a310a6144e4e2ca3c2ad"
+    },
+    {
+      "path": "src/protocol/battle/game_score_record.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameScoreRecord.cpp",
+      "sha256": "ae10f9ac6bd15636b308d1594dfdc24ae3b0e7fe0e57e2ef181cc047f639bfce"
+    },
+    {
+      "path": "src/protocol/battle/game_score_update_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameScoreUpdateNotification.cpp",
+      "sha256": "eb90e88f3e8861d8f0b74918348a623ef1b3defbbeab7d89398f64f38ec85600"
+    },
+    {
+      "path": "src/protocol/battle/game_score_value_update.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameScoreValueUpdate.cpp",
+      "sha256": "02cd1b4bf69ebace01ca92f8a9627557c99546019862aef3e91a61b6c5c5438d"
+    },
+    {
+      "path": "src/protocol/battle/game_shot_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameShotNotification.cpp",
+      "sha256": "9c0b742f44f0c8328677148a44dd0ffb60c20cd8cd4657ed278c819103c96f06"
+    },
+    {
+      "path": "src/protocol/battle/game_start_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameStartNotification.cpp",
+      "sha256": "cc24753e28e76a07d75b801c0c91b119a62a304d5319847875d053cdfccdf14c"
+    },
+    {
+      "path": "src/protocol/battle/game_stomp_hit_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameStompHitNotification.cpp",
+      "sha256": "da9bf5152a06dadd49b681d80bf4f7eac762e8bb26b0e95e7652f9c2533d9789"
+    },
+    {
+      "path": "src/protocol/battle/game_stomp_start_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameStompStartNotification.cpp",
+      "sha256": "fdfcd82d4b9fabe605f00b7d538596c71d9085630503c100bf56111ebacc68b1"
+    },
+    {
+      "path": "src/protocol/battle/game_transport_options_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameTransportOptionsNotification.cpp",
+      "sha256": "6db8a7116b81203fdcdd62afcdef7b65fdfd3bba47e6c5e43da8d3be6a847c01"
+    },
+    {
+      "path": "src/protocol/battle/game_weapon_impact_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameWeaponImpactNotification.cpp",
+      "sha256": "c5eb498f4399c16bdbb8a18c23fb9f9005584150d30f76a36d3a5fec5e9e477c"
+    },
+    {
+      "path": "src/protocol/battle/game_weapon_switch_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GameWeaponSwitchNotification.cpp",
+      "sha256": "c30635a65fcfd82d64adf0c18750d934537f34bb3ed58b31f4d7e09b1536fe4e"
+    },
+    {
+      "path": "src/protocol/scenes/goto_lobby_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GotoLobbyNotification.cpp",
+      "sha256": "b87f92c81f36d9c6a43e2a058259901e7b6adf1ab8ec91fca6461d9ab5439e12"
+    },
+    {
+      "path": "src/protocol/scenes/goto_room_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/GotoRoomNotification.cpp",
+      "sha256": "d9ef00288f1cf0f3013c3d20c826d207f196f245c8c33faff57e9ab30ecfdedf"
+    },
+    {
+      "path": "src/protocol/inventory/inventory_item_record.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/InventoryItemRecord.cpp",
+      "sha256": "97c1dd314a013b9e955c6c578852b06aaed7ce4d30c70028dc2f756c7def4529"
+    },
+    {
+      "path": "src/protocol/inventory/inventory_refresh_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/InventoryRefreshRequest.cpp",
+      "sha256": "24342fa3e9d152df32bbdc4628cc1caa74bc6fd27c0e888d10e6ac8b5e04ab53"
+    },
+    {
+      "path": "src/protocol/inventory/inventory_update_all_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/InventoryUpdateAllNotification.cpp",
+      "sha256": "72cf2199cdadf0cc93f25dbb3ac1a2a154752c502f0eb0ddfb8b2da11eac491f"
+    },
+    {
+      "path": "src/protocol/inventory/inventory_view_update_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/InventoryViewUpdateNotification.cpp",
+      "sha256": "eb10554c00653f4239f198066ce74a02380c235cf15c4c88f1c319510b0877f3"
+    },
+    {
+      "path": "src/protocol/inventory/item_use_arguments.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ItemUseArguments.cpp",
+      "sha256": "92a6cce80837a66221fd91035f45b199f3ebcb1321721936741fc446971b352e"
+    },
+    {
+      "path": "src/protocol/inventory/item_use_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ItemUseRequest.cpp",
+      "sha256": "b72797f8a8ca83af8cdca61d5228f457567daea516719d9d12a917e7a7ad90d0"
+    },
+    {
+      "path": "src/protocol/inventory/item_use_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ItemUseResponse.cpp",
+      "sha256": "48dd00ef5e61019b35cfaa05f39dacb471cad57e869f5409a8f6af213263bab1"
+    },
+    {
+      "path": "src/protocol/rooms/join_room_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/JoinRoomRequest.cpp",
+      "sha256": "2ff3308bbae1aa54e4372ca8f46ce874a660b7afc8b9aa2331d85d7bcdd87199"
+    },
+    {
+      "path": "src/protocol/rooms/join_room_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/JoinRoomResponse.cpp",
+      "sha256": "06305e0cf6626da5d7ad336ee46712bda12daa4893cb9e111d987f96fc6520c1"
+    },
+    {
+      "path": "src/protocol/rooms/leave_room_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/LeaveRoomRequest.cpp",
+      "sha256": "e76568007d4fbe9b2445c3c33dff45ab8e52e16bfc63923e8b4fad50a74e5b26"
+    },
+    {
+      "path": "src/protocol/login/login_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/LoginRequest.cpp",
+      "sha256": "f2b13b31920d4f431352abb21df35c09b227ad408238f513d7bd3824465c7204"
+    },
+    {
+      "path": "src/protocol/login/login_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/LoginResponse.cpp",
+      "sha256": "df45f81291b10074c83cad0e0ba6f9edc15260af21d785e14eaed9eb4bb71683"
+    },
+    {
+      "path": "src/protocol/scenes/move_into_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/MoveIntoResponse.cpp",
+      "sha256": "2daf91ea6cefa2efa6092f80f90b9447155fb13aeb5cee98108df031348a8713"
+    },
+    {
+      "path": "src/protocol/codec/packet_reader.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/PacketReader.cpp",
+      "sha256": "dcc61c55e4fff6e633559f9f96720267834b4216eb3a1158228eee7056136d7d"
+    },
+    {
+      "path": "src/protocol/codec/packet_stream_decoder.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/PacketStreamDecoder.cpp",
+      "sha256": "4f8ba88898b2f96a62ffa82b3a801e0882390b25906c0ecf80cba5ef17ea8484"
+    },
+    {
+      "path": "src/protocol/codec/packet_writer.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/PacketWriter.cpp",
+      "sha256": "28e4199341ce1ff7e6438e7713d6f95e226bb6195bce527a4520333f1d908abc"
+    },
+    {
+      "path": "src/protocol/scenes/plaza_movement.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/PlazaMovement.cpp",
+      "sha256": "41d529c3e6ce23f75bcd8d160d5324b678041ac5223c82edc52a075537e83138"
+    },
+    {
+      "path": "src/protocol/battle/respawn_parameters.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/RespawnParameters.cpp",
+      "sha256": "d25f376bee2109f90fbfca1707e55cbdcfc0434c0e92ececed55c83bfe1e5bc5"
+    },
+    {
+      "path": "src/protocol/rooms/room_host_changed_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/RoomHostChangedNotification.cpp",
+      "sha256": "d8d283c2e2c97cda19e2fa2964ff146c89d0aee4ceb5458187bace7fedda4e10"
+    },
+    {
+      "path": "src/protocol/rooms/room_list_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/RoomListRequest.cpp",
+      "sha256": "3b5d7b43200fcfd59582fa73479ded6215017716143b2867fd803a5f2778e733"
+    },
+    {
+      "path": "src/protocol/rooms/room_list_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/RoomListResponse.cpp",
+      "sha256": "3680be3cf846c459575875489f47c1a10065a3a8f691a34e4a98b7069cef7110"
+    },
+    {
+      "path": "src/protocol/rooms/room_member_left_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/RoomMemberLeftNotification.cpp",
+      "sha256": "b8df3c93b9948ba8a5e3f54a48f1bbe5acee66245460783450723b82c547ae7d"
+    },
+    {
+      "path": "src/protocol/rooms/room_ready_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/RoomReadyRequest.cpp",
+      "sha256": "6e511a802b414caafc8647cbd47916193455c1cc8a6ba17b3040a0e4908d7b67"
+    },
+    {
+      "path": "src/protocol/rooms/room_slot_update_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/RoomSlotUpdateNotification.cpp",
+      "sha256": "f0c015b77e30bef2497f246f67d6fd2fdbf49e7177babab64dae1a9c1298abf9"
+    },
+    {
+      "path": "src/protocol/scenes/scene_descriptor_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/SceneDescriptorNotification.cpp",
+      "sha256": "52952f98fc432023ce7e4a21985b38dedd6cd2ac543f318dd8d0874bd25ac668"
+    },
+    {
+      "path": "src/protocol/login/server_ping_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ServerPingRequest.cpp",
+      "sha256": "9df5d09c031d00727e62a5474011395d122f5bd6bb2fd8c5cf4f8ad806c55ba6"
+    },
+    {
+      "path": "src/protocol/unresolved/server_to_client_message_0x025e.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ServerToClientMessage0x025E.cpp",
+      "sha256": "23678eb3b46e98af58d50ff4ebb107458815f943eb2dc8ed130f810fc980b221"
+    },
+    {
+      "path": "src/protocol/scenes/session_descriptor.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/SessionDescriptor.cpp",
+      "sha256": "6fa730e5ef9149c0bf71be2b3c5c1dd20c89c8b7c734edd0afc5cd58114d2be4"
+    },
+    {
+      "path": "src/protocol/shop/shop_entry_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ShopEntryRequest.cpp",
+      "sha256": "103dab551d9e1fdc0dae319ce364ea46051d733729e94c1bdf1bbc5463a4d20b"
+    },
+    {
+      "path": "src/protocol/shop/shop_entry_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ShopEntryResponse.cpp",
+      "sha256": "bed402bc6a16c2235acfe835ee1ccfca68bd4c07c6b16e31c6ff1474546daf4b"
+    },
+    {
+      "path": "src/protocol/shop/shop_purchase_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ShopPurchaseRequest.cpp",
+      "sha256": "b83b214005392b80b8ef4c0a947b0d53e15d726597499dbeb123452ccbb14d2e"
+    },
+    {
+      "path": "src/protocol/shop/shop_purchase_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ShopPurchaseResponse.cpp",
+      "sha256": "7b7a8e90ca4ed302d6332256789ce9087e09d7c34d7203c31c4e4c9921cca99b"
+    },
+    {
+      "path": "src/protocol/rooms/start_game_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/StartGameRequest.cpp",
+      "sha256": "1c3067f2ee2b1799d1f3ad2f91cec676faad36148bf47e5d2d79a1c8c9bbc6c4"
+    },
+    {
+      "path": "src/protocol/codec/tcp_packet_codec.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/TcpPacketCodec.cpp",
+      "sha256": "7e82aeff4e1e70c536f6d26cc9aef5a599856ebdc009449d0a1a8cb4b75c7284"
+    },
+    {
+      "path": "src/protocol/inventory/unequip_item_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/UnequipItemRequest.cpp",
+      "sha256": "f319a9f6c09cd2fca34f50c9aab53a2ee943849862a2cc63f3bc35182679ca63"
+    },
+    {
+      "path": "src/protocol/scenes/update_party_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/UpdatePartyNotification.cpp",
+      "sha256": "9e6c8ef4ab6f2a0727e1629c0132d7ad2f5e740425e9fbf16462574aaea1fa35",
+      "identifier_aliases": {
+        "detail_value": "value",
+        "group_value": "value",
+        "entry_value": "value",
+        "byte": "value"
+      }
+    },
+    {
+      "path": "src/protocol/characters/user_stat_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/UserStatNotification.cpp",
+      "sha256": "75da3c455b8b902d32414624de458860e810d302c3081ab2693c32a6dbd7c5a5"
+    },
+    {
+      "path": "src/protocol/inventory/weapon_preset_change_request.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/WeaponPresetChangeRequest.cpp",
+      "sha256": "354fcaea3666b4489c873dee80da2f887c3a42ba33d54f8ff29c8dad42ef470c"
+    },
+    {
+      "path": "src/protocol/inventory/weapon_preset_change_response.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/WeaponPresetChangeResponse.cpp",
+      "sha256": "438b7be782c7e49ec8dcb7e88ffab158cf596cf42911ce1b938ef6373202c100"
+    },
+    {
+      "path": "src/protocol/inventory/weapon_preset_update_notification.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/WeaponPresetUpdateNotification.cpp",
+      "sha256": "52395bd55a891bd378a0bd10620903178ab35dedfd246b7aa3876e3aca796d09"
+    },
+    {
+      "path": "src/protocol/codec/zlib_stored_stream.cpp",
+      "source_path": "Source/BubbleFighter.Server/Protocol/ZlibStoredStream.cpp",
+      "sha256": "5193f7cfb668233d9fd13c19bbe827a4f038bb07fa3d7d1630709ae5f42b8831"
+    }
+  ]
+}

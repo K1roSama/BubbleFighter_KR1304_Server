@@ -1,0 +1,5 @@
+Artifacts/
+Local/
+.vs/
+*.log
+__pycache__/

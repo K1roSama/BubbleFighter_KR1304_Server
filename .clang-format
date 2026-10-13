@@ -1,0 +1,17 @@
+BasedOnStyle: Google
+Standard: c++20
+LineEnding: LF
+DerivePointerAlignment: false
+PointerAlignment: Left
+SortIncludes: CaseSensitive
+BreakStringLiterals: false
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^<[Ww]indows\.h>'
+    Priority: 1
+  - Regex: '^<.*\.h>'
+    Priority: 2
+  - Regex: '^<.*>'
+    Priority: 3
+  - Regex: '^".*"'
+    Priority: 4

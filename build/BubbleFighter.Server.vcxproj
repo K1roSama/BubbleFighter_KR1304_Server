@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A10B5F38-83C3-40D9-ABE5-E61B99D7C354}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BubbleFighter.Server</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(MSBuildProjectDirectory)\..\Artifacts\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(MSBuildProjectDirectory)\..\Artifacts\Obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>BubbleFighter.Server</TargetName>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 /FS %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\application\local_account_command.cpp" />
+    <ClInclude Include="..\src\application\local_account_command.h" />
+    <ClCompile Include="..\src\application\server_application.cpp" />
+    <ClInclude Include="..\src\application\server_application.h" />
+    <ClCompile Include="..\src\crypto\sha256.cpp" />
+    <ClInclude Include="..\src\crypto\sha256.h" />
+    <ClCompile Include="..\src\features\authentication\account_authentication.cpp" />
+    <ClInclude Include="..\src\features\authentication\account_authentication.h" />
+    <ClInclude Include="..\src\features\authentication\account_store.h" />
+    <ClCompile Include="..\src\features\authentication\credential_crypto.cpp" />
+    <ClInclude Include="..\src\features\authentication\credential_crypto.h" />
+    <ClCompile Include="..\src\features\authentication\initial_handshake.cpp" />
+    <ClInclude Include="..\src\features\authentication\initial_handshake.h" />
+    <ClCompile Include="..\src\features\authentication\login_profile.cpp" />
+    <ClInclude Include="..\src\features\authentication\login_profile.h" />
+    <ClCompile Include="..\src\features\battle\combat_damage.cpp" />
+    <ClInclude Include="..\src\features\battle\combat_damage.h" />
+    <ClCompile Include="..\src\features\battle\combat_geometry.cpp" />
+    <ClInclude Include="..\src\features\battle\combat_geometry.h" />
+    <ClCompile Include="..\src\features\battle\combat_movement_timeline.cpp" />
+    <ClInclude Include="..\src\features\battle\combat_movement_timeline.h" />
+    <ClCompile Include="..\src\features\battle\combat_scene.cpp" />
+    <ClInclude Include="..\src\features\battle\combat_scene.h" />
+    <ClCompile Include="..\src\features\battle\combat_weapon_catalog.cpp" />
+    <ClInclude Include="..\src\features\battle\combat_weapon_catalog.h" />
+    <ClCompile Include="..\src\features\battle\fighter_attribute_catalog.cpp" />
+    <ClInclude Include="..\src\features\battle\fighter_attribute_catalog.h" />
+    <ClCompile Include="..\src\features\battle\fighter_maximum_health.cpp" />
+    <ClInclude Include="..\src\features\battle\fighter_maximum_health.h" />
+    <ClInclude Include="..\src\features\battle\generated\combat_scene_data.h" />
+    <ClInclude Include="..\src\features\battle\generated\combat_weapon_catalog_data.h" />
+    <ClInclude Include="..\src\features\battle\generated\fighter_attribute_catalog_data.h" />
+    <ClInclude Include="..\src\features\battle\generated\fighter_health_catalog_data.h" />
+    <ClInclude Include="..\src\features\battle\generated\weapon_catalog_data.h" />
+    <ClCompile Include="..\src\features\battle\weapon_catalog.cpp" />
+    <ClInclude Include="..\src\features\battle\weapon_catalog.h" />
+    <ClCompile Include="..\src\features\characters\character_creation.cpp" />
+    <ClInclude Include="..\src\features\characters\character_creation.h" />
+    <ClCompile Include="..\src\features\characters\character_profile.cpp" />
+    <ClInclude Include="..\src\features\characters\character_profile.h" />
+    <ClCompile Include="..\src\features\characters\character_statistics.cpp" />
+    <ClInclude Include="..\src\features\characters\character_statistics.h" />
+    <ClInclude Include="..\src\features\characters\character_store.h" />
+    <ClInclude Include="..\src\features\chat\generated\chat_expression_data.h" />
+    <ClCompile Include="..\src\features\chat\scene_chat.cpp" />
+    <ClInclude Include="..\src\features\chat\scene_chat.h" />
+    <ClCompile Include="..\src\features\configuration\content_config_response.cpp" />
+    <ClInclude Include="..\src\features\configuration\content_config_response.h" />
+    <ClCompile Include="..\src\features\inventory\cash_inventory.cpp" />
+    <ClInclude Include="..\src\features\inventory\cash_inventory.h" />
+    <ClCompile Include="..\src\features\inventory\default_inventory.cpp" />
+    <ClInclude Include="..\src\features\inventory\default_inventory.h" />
+    <ClCompile Include="..\src\features\inventory\equipment_change.cpp" />
+    <ClInclude Include="..\src\features\inventory\equipment_change.h" />
+    <ClCompile Include="..\src\features\inventory\equipment_view.cpp" />
+    <ClInclude Include="..\src\features\inventory\equipment_view.h" />
+    <ClInclude Include="..\src\features\inventory\generated\item_catalog_data.h" />
+    <ClCompile Include="..\src\features\inventory\inventory_grant.cpp" />
+    <ClInclude Include="..\src\features\inventory\inventory_grant.h" />
+    <ClCompile Include="..\src\features\inventory\inventory_presentation.cpp" />
+    <ClInclude Include="..\src\features\inventory\inventory_presentation.h" />
+    <ClCompile Include="..\src\features\inventory\inventory_refresh.cpp" />
+    <ClInclude Include="..\src\features\inventory\inventory_refresh.h" />
+    <ClCompile Include="..\src\features\inventory\inventory_slot.cpp" />
+    <ClInclude Include="..\src\features\inventory\inventory_slot.h" />
+    <ClInclude Include="..\src\features\inventory\inventory_store.h" />
+    <ClCompile Include="..\src\features\inventory\inventory_validation.cpp" />
+    <ClInclude Include="..\src\features\inventory\inventory_validation.h" />
+    <ClCompile Include="..\src\features\inventory\item_catalog.cpp" />
+    <ClInclude Include="..\src\features\inventory\item_catalog.h" />
+    <ClCompile Include="..\src\features\inventory\item_use.cpp" />
+    <ClInclude Include="..\src\features\inventory\item_use.h" />
+    <ClCompile Include="..\src\features\inventory\weapon_preset_state.cpp" />
+    <ClInclude Include="..\src\features\inventory\weapon_preset_state.h" />
+    <ClCompile Include="..\src\features\lobby\lobby_session.cpp" />
+    <ClInclude Include="..\src\features\lobby\lobby_session.h" />
+    <ClCompile Include="..\src\features\lobby\plaza_registry.cpp" />
+    <ClInclude Include="..\src\features\lobby\plaza_registry.h" />
+    <ClCompile Include="..\src\features\parties\solo_party.cpp" />
+    <ClInclude Include="..\src\features\parties\solo_party.h" />
+    <ClCompile Include="..\src\features\practice\practice_entry.cpp" />
+    <ClInclude Include="..\src\features\practice\practice_entry.h" />
+    <ClCompile Include="..\src\features\practice\practice_session.cpp" />
+    <ClInclude Include="..\src\features\practice\practice_session.h" />
+    <ClInclude Include="..\src\features\rooms\generated\room_map_catalog_data.h" />
+    <ClCompile Include="..\src\features\rooms\match_profile_updates.cpp" />
+    <ClInclude Include="..\src\features\rooms\match_profile_updates.h" />
+    <ClCompile Include="..\src\features\rooms\match_reward_configuration.cpp" />
+    <ClCompile Include="..\src\features\rooms\match_reward_policy.cpp" />
+    <ClInclude Include="..\src\features\rooms\match_reward_policy.h" />
+    <ClCompile Include="..\src\features\rooms\result_award_rules.cpp" />
+    <ClInclude Include="..\src\features\rooms\result_award_rules.h" />
+    <ClCompile Include="..\src\features\rooms\room_actions.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_actions.h" />
+    <ClCompile Include="..\src\features\rooms\room_actor_actions.cpp" />
+    <ClCompile Include="..\src\features\rooms\room_bubble_actions.cpp" />
+    <ClCompile Include="..\src\features\rooms\room_creation.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_creation.h" />
+    <ClCompile Include="..\src\features\rooms\room_game_lifecycle.cpp" />
+    <ClCompile Include="..\src\features\rooms\room_game_session.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_game_session.h" />
+    <ClCompile Include="..\src\features\rooms\room_map_catalog.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_map_catalog.h" />
+    <ClCompile Include="..\src\features\rooms\room_match_settlement.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_match_settlement.h" />
+    <ClCompile Include="..\src\features\rooms\room_packet_queue.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_packet_queue.h" />
+    <ClCompile Include="..\src\features\rooms\room_projectiles.cpp" />
+    <ClCompile Include="..\src\features\rooms\room_registry.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_registry.h" />
+    <ClCompile Include="..\src\features\rooms\room_roster.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_roster.h" />
+    <ClCompile Include="..\src\features\rooms\room_settlement_queue.cpp" />
+    <ClInclude Include="..\src\features\rooms\room_settlement_queue.h" />
+    <ClCompile Include="..\src\features\scenes\scene_roster.cpp" />
+    <ClInclude Include="..\src\features\scenes\scene_roster.h" />
+    <ClCompile Include="..\src\features\shop\cash_shop.cpp" />
+    <ClInclude Include="..\src\features\shop\cash_shop.h" />
+    <ClInclude Include="..\src\features\shop\generated\shop_catalog_data.h" />
+    <ClInclude Include="..\src\features\shop\generated\shop_fallback_stock_data.h" />
+    <ClInclude Include="..\src\features\shop\generated\shop_stock_catalog_data.h" />
+    <ClCompile Include="..\src\features\shop\shop_catalog.cpp" />
+    <ClInclude Include="..\src\features\shop\shop_catalog.h" />
+    <ClCompile Include="..\src\features\shop\shop_catalog_response.cpp" />
+    <ClInclude Include="..\src\features\shop\shop_catalog_response.h" />
+    <ClCompile Include="..\src\features\shop\shop_purchase.cpp" />
+    <ClInclude Include="..\src\features\shop\shop_purchase.h" />
+    <ClCompile Include="..\src\features\shop\shop_stock_catalog.cpp" />
+    <ClInclude Include="..\src\features\shop\shop_stock_catalog.h" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\network\connection_heartbeat.cpp" />
+    <ClInclude Include="..\src\network\connection_heartbeat.h" />
+    <ClCompile Include="..\src\network\tcp_server.cpp" />
+    <ClInclude Include="..\src\network\tcp_server.h" />
+    <ClCompile Include="..\src\persistence\inventory\inventory_rows.cpp" />
+    <ClInclude Include="..\src\persistence\inventory\inventory_rows.h" />
+    <ClCompile Include="..\src\persistence\inventory\my_sql_inventory_changes.cpp" />
+    <ClCompile Include="..\src\persistence\inventory\my_sql_inventory_commerce.cpp" />
+    <None Include="..\src\persistence\migrations\add_character_statistics.sql" />
+    <None Include="..\src\persistence\migrations\create_cash_inventory_slots.sql" />
+    <None Include="..\src\persistence\migrations\create_characters.sql" />
+    <None Include="..\src\persistence\migrations\create_inventory_slots.sql" />
+    <None Include="..\src\persistence\migrations\create_local_accounts.sql" />
+    <None Include="..\src\persistence\migrations\create_match_settlements.sql" />
+    <None Include="..\src\persistence\migrations\create_weapon_presets.sql" />
+    <None Include="..\src\persistence\migrations\expand_cash_inventory_usage.sql" />
+    <ClCompile Include="..\src\persistence\my_sql_account_store.cpp" />
+    <ClInclude Include="..\src\persistence\my_sql_account_store.h" />
+    <ClCompile Include="..\src\persistence\my_sql_character_store.cpp" />
+    <ClInclude Include="..\src\persistence\my_sql_character_store.h" />
+    <ClInclude Include="..\src\persistence\my_sql_commands.h" />
+    <ClCompile Include="..\src\persistence\my_sql_connection.cpp" />
+    <ClInclude Include="..\src\persistence\my_sql_connection.h" />
+    <ClCompile Include="..\src\persistence\my_sql_inventory_store.cpp" />
+    <ClInclude Include="..\src\persistence\my_sql_inventory_store.h" />
+    <ClCompile Include="..\src\persistence\my_sql_match_store.cpp" />
+    <ClInclude Include="..\src\persistence\my_sql_match_store.h" />
+    <ClCompile Include="..\src\protocol\battle\compressed_shot_record.cpp" />
+    <ClInclude Include="..\src\protocol\battle\compressed_shot_record.h" />
+    <ClCompile Include="..\src\protocol\battle\game_actor_damage_result_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_actor_damage_result_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_actor_death_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_actor_death_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_actor_respawn_wait_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_actor_respawn_wait_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_action_complete_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_action_complete_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_action_end_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_action_end_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_action_start_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_action_start_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_contact_pop_request.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_contact_pop_request.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_deflect_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_deflect_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_exit_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_exit_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_pop_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_pop_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_rescue_effect_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_rescue_effect_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_rescue_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_rescue_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_rescue_request.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_rescue_request.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_settled_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_settled_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_bubble_shot_pop_request.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_bubble_shot_pop_request.h" />
+    <ClCompile Include="..\src\protocol\battle\game_countdown_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_countdown_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_damager_remove_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_damager_remove_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_extended_shot_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_extended_shot_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_grenade_detonate_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_grenade_detonate_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_hit_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_hit_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_load_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_load_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_loading_complete_request.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_loading_complete_request.h" />
+    <ClCompile Include="..\src\protocol\battle\game_melee_attack_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_melee_attack_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_movement_delta_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_movement_delta_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_movement_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_movement_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_over_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_over_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_report_request.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_report_request.h" />
+    <ClCompile Include="..\src\protocol\battle\game_respawn_completion_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_respawn_completion_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_respawn_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_respawn_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_respawn_request.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_respawn_request.h" />
+    <ClCompile Include="..\src\protocol\battle\game_result_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_result_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_result_presentation_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_result_presentation_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_return_to_room_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_return_to_room_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_score_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_score_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_score_player_update_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_score_player_update_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_score_record.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_score_record.h" />
+    <ClCompile Include="..\src\protocol\battle\game_score_update_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_score_update_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_score_value_update.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_score_value_update.h" />
+    <ClCompile Include="..\src\protocol\battle\game_shot_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_shot_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_start_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_start_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_stomp_hit_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_stomp_hit_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_stomp_start_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_stomp_start_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_transport_options_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_transport_options_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_weapon_impact_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_weapon_impact_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\game_weapon_switch_notification.cpp" />
+    <ClInclude Include="..\src\protocol\battle\game_weapon_switch_notification.h" />
+    <ClCompile Include="..\src\protocol\battle\respawn_parameters.cpp" />
+    <ClInclude Include="..\src\protocol\battle\respawn_parameters.h" />
+    <ClCompile Include="..\src\protocol\characters\check_create_user_name_request.cpp" />
+    <ClInclude Include="..\src\protocol\characters\check_create_user_name_request.h" />
+    <ClCompile Include="..\src\protocol\characters\check_create_user_name_response.cpp" />
+    <ClInclude Include="..\src\protocol\characters\check_create_user_name_response.h" />
+    <ClCompile Include="..\src\protocol\characters\create_user_info_notification.cpp" />
+    <ClInclude Include="..\src\protocol\characters\create_user_info_notification.h" />
+    <ClCompile Include="..\src\protocol\characters\create_user_info_request.cpp" />
+    <ClInclude Include="..\src\protocol\characters\create_user_info_request.h" />
+    <ClCompile Include="..\src\protocol\characters\create_user_info_response.cpp" />
+    <ClInclude Include="..\src\protocol\characters\create_user_info_response.h" />
+    <ClCompile Include="..\src\protocol\characters\fighter_info.cpp" />
+    <ClInclude Include="..\src\protocol\characters\fighter_info.h" />
+    <ClCompile Include="..\src\protocol\characters\user_stat_notification.cpp" />
+    <ClInclude Include="..\src\protocol\characters\user_stat_notification.h" />
+    <ClCompile Include="..\src\protocol\codec\additive_stream_cipher.cpp" />
+    <ClInclude Include="..\src\protocol\codec\additive_stream_cipher.h" />
+    <ClCompile Include="..\src\protocol\codec\packet_reader.cpp" />
+    <ClInclude Include="..\src\protocol\codec\packet_reader.h" />
+    <ClCompile Include="..\src\protocol\codec\packet_stream_decoder.cpp" />
+    <ClInclude Include="..\src\protocol\codec\packet_stream_decoder.h" />
+    <ClCompile Include="..\src\protocol\codec\packet_writer.cpp" />
+    <ClInclude Include="..\src\protocol\codec\packet_writer.h" />
+    <ClCompile Include="..\src\protocol\codec\tcp_packet_codec.cpp" />
+    <ClInclude Include="..\src\protocol\codec\tcp_packet_codec.h" />
+    <ClCompile Include="..\src\protocol\codec\zlib_stored_stream.cpp" />
+    <ClInclude Include="..\src\protocol\codec\zlib_stored_stream.h" />
+    <ClCompile Include="..\src\protocol\configuration\content_configuration.cpp" />
+    <ClInclude Include="..\src\protocol\configuration\content_configuration.h" />
+    <ClCompile Include="..\src\protocol\configuration\dynamic_config_request.cpp" />
+    <ClInclude Include="..\src\protocol\configuration\dynamic_config_request.h" />
+    <ClCompile Include="..\src\protocol\configuration\dynamic_config_response.cpp" />
+    <ClInclude Include="..\src\protocol\configuration\dynamic_config_response.h" />
+    <ClCompile Include="..\src\protocol\inventory\cash_inventory_pickup_request.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_pickup_request.h" />
+    <ClCompile Include="..\src\protocol\inventory\cash_inventory_pickup_response.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_pickup_response.h" />
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_slot_record.h" />
+    <ClCompile Include="..\src\protocol\inventory\cash_inventory_update_notification.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\cash_inventory_update_notification.h" />
+    <ClCompile Include="..\src\protocol\inventory\equip_item_request.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\equip_item_request.h" />
+    <ClCompile Include="..\src\protocol\inventory\inventory_item_record.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\inventory_item_record.h" />
+    <ClCompile Include="..\src\protocol\inventory\inventory_refresh_request.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\inventory_refresh_request.h" />
+    <ClCompile Include="..\src\protocol\inventory\inventory_update_all_notification.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\inventory_update_all_notification.h" />
+    <ClCompile Include="..\src\protocol\inventory\inventory_view_update_notification.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\inventory_view_update_notification.h" />
+    <ClCompile Include="..\src\protocol\inventory\item_use_arguments.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\item_use_arguments.h" />
+    <ClCompile Include="..\src\protocol\inventory\item_use_request.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\item_use_request.h" />
+    <ClCompile Include="..\src\protocol\inventory\item_use_response.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\item_use_response.h" />
+    <ClCompile Include="..\src\protocol\inventory\unequip_item_request.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\unequip_item_request.h" />
+    <ClCompile Include="..\src\protocol\inventory\weapon_preset_change_request.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\weapon_preset_change_request.h" />
+    <ClCompile Include="..\src\protocol\inventory\weapon_preset_change_response.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\weapon_preset_change_response.h" />
+    <ClCompile Include="..\src\protocol\inventory\weapon_preset_update_notification.cpp" />
+    <ClInclude Include="..\src\protocol\inventory\weapon_preset_update_notification.h" />
+    <ClCompile Include="..\src\protocol\login\center_list_notification.cpp" />
+    <ClInclude Include="..\src\protocol\login\center_list_notification.h" />
+    <ClCompile Include="..\src\protocol\login\client_ping_response.cpp" />
+    <ClInclude Include="..\src\protocol\login\client_ping_response.h" />
+    <ClCompile Include="..\src\protocol\login\client_to_server_message_0x0001.cpp" />
+    <ClInclude Include="..\src\protocol\login\client_to_server_message_0x0001.h" />
+    <ClCompile Include="..\src\protocol\login\connection_greeting.cpp" />
+    <ClInclude Include="..\src\protocol\login\connection_greeting.h" />
+    <ClCompile Include="..\src\protocol\login\game_patch_response.cpp" />
+    <ClInclude Include="..\src\protocol\login\game_patch_response.h" />
+    <ClCompile Include="..\src\protocol\login\login_request.cpp" />
+    <ClInclude Include="..\src\protocol\login\login_request.h" />
+    <ClCompile Include="..\src\protocol\login\login_response.cpp" />
+    <ClInclude Include="..\src\protocol\login\login_response.h" />
+    <ClCompile Include="..\src\protocol\login\server_ping_request.cpp" />
+    <ClInclude Include="..\src\protocol\login\server_ping_request.h" />
+    <ClCompile Include="..\src\protocol\rooms\create_room_request.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\create_room_request.h" />
+    <ClCompile Include="..\src\protocol\rooms\create_room_response.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\create_room_response.h" />
+    <ClCompile Include="..\src\protocol\rooms\join_room_request.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\join_room_request.h" />
+    <ClCompile Include="..\src\protocol\rooms\join_room_response.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\join_room_response.h" />
+    <ClCompile Include="..\src\protocol\rooms\leave_room_request.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\leave_room_request.h" />
+    <ClCompile Include="..\src\protocol\rooms\room_host_changed_notification.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\room_host_changed_notification.h" />
+    <ClCompile Include="..\src\protocol\rooms\room_list_request.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\room_list_request.h" />
+    <ClCompile Include="..\src\protocol\rooms\room_list_response.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\room_list_response.h" />
+    <ClCompile Include="..\src\protocol\rooms\room_member_left_notification.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\room_member_left_notification.h" />
+    <ClCompile Include="..\src\protocol\rooms\room_ready_request.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\room_ready_request.h" />
+    <ClCompile Include="..\src\protocol\rooms\room_slot_update_notification.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\room_slot_update_notification.h" />
+    <ClCompile Include="..\src\protocol\rooms\start_game_request.cpp" />
+    <ClInclude Include="..\src\protocol\rooms\start_game_request.h" />
+    <ClCompile Include="..\src\protocol\scenes\chat_notification.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\chat_notification.h" />
+    <ClCompile Include="..\src\protocol\scenes\chat_request.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\chat_request.h" />
+    <ClCompile Include="..\src\protocol\scenes\goto_lobby_notification.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\goto_lobby_notification.h" />
+    <ClCompile Include="..\src\protocol\scenes\goto_room_notification.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\goto_room_notification.h" />
+    <ClCompile Include="..\src\protocol\scenes\move_into_response.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\move_into_response.h" />
+    <ClCompile Include="..\src\protocol\scenes\plaza_movement.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\plaza_movement.h" />
+    <ClCompile Include="..\src\protocol\scenes\scene_descriptor_notification.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\scene_descriptor_notification.h" />
+    <ClCompile Include="..\src\protocol\scenes\session_descriptor.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\session_descriptor.h" />
+    <ClCompile Include="..\src\protocol\scenes\update_party_notification.cpp" />
+    <ClInclude Include="..\src\protocol\scenes\update_party_notification.h" />
+    <ClCompile Include="..\src\protocol\shop\cash_balance_request.cpp" />
+    <ClInclude Include="..\src\protocol\shop\cash_balance_request.h" />
+    <ClCompile Include="..\src\protocol\shop\cash_balance_response.cpp" />
+    <ClInclude Include="..\src\protocol\shop\cash_balance_response.h" />
+    <ClCompile Include="..\src\protocol\shop\shop_entry_request.cpp" />
+    <ClInclude Include="..\src\protocol\shop\shop_entry_request.h" />
+    <ClCompile Include="..\src\protocol\shop\shop_entry_response.cpp" />
+    <ClInclude Include="..\src\protocol\shop\shop_entry_response.h" />
+    <ClCompile Include="..\src\protocol\shop\shop_purchase_request.cpp" />
+    <ClInclude Include="..\src\protocol\shop\shop_purchase_request.h" />
+    <ClCompile Include="..\src\protocol\shop\shop_purchase_response.cpp" />
+    <ClInclude Include="..\src\protocol\shop\shop_purchase_response.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0021.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0021.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0069.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0069.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x006a.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x006a.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x006b.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x006b.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0209.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0209.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0243.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0243.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x025f.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x025f.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0260.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0260.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x0270.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x0270.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x07ed.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x07ed.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800b.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800b.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800c.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800c.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800d.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800d.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x800e.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x800e.h" />
+    <ClCompile Include="..\src\protocol\unresolved\client_to_server_message_0x802d.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\client_to_server_message_0x802d.h" />
+    <ClCompile Include="..\src\protocol\unresolved\server_to_client_message_0x025e.cpp" />
+    <ClInclude Include="..\src\protocol\unresolved\server_to_client_message_0x025e.h" />
+    <ClCompile Include="..\src\sessions\menu_initialization.cpp" />
+    <ClInclude Include="..\src\sessions\menu_initialization.h" />
+    <ClCompile Include="..\src\sessions\menu_snapshot.cpp" />
+    <ClInclude Include="..\src\sessions\menu_snapshot.h" />
+    <ClCompile Include="..\src\sessions\player_commerce.cpp" />
+    <ClCompile Include="..\src\sessions\player_practice.cpp" />
+    <ClCompile Include="..\src\sessions\player_practice_state.cpp" />
+    <ClCompile Include="..\src\sessions\player_rooms.cpp" />
+    <ClCompile Include="..\src\sessions\player_session.cpp" />
+    <ClInclude Include="..\src\sessions\player_session.h" />
+  </ItemGroup>
+  <Import Project="$(MSBuildProjectDirectory)\mysql.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
